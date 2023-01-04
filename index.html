@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!------------------font-awsome-link----------------->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <title>Document</title>
+<style>
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+list-style: none;
+border: none;
+outline: none;
+text-transform: capitalize;
+transition: all .2s linear;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+html{
+    overflow-x:hidden;
+font-size: 62.5%;
+scroll-behavior: smooth;
+scroll-margin-top: 7rem;
+margin-bottom: 20%;
+}
+
+
+
+
+
+
+
+
+header{
+position: fixed;
+left: 0;
+top: 0;
+right: 0;
+z-index: 1000;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 1rem 5rem;
+background: #fff;
+box-shadow: 2px 2px 2px rgb(0,0,0.1);
+
+}
+
+
+header .logo{
+position: relative;
+font-size: 3.1rem;
+font-weight: bold;
+padding-top: 3.2rem;
+padding-left: 5rem;
+color: black;
+}
+
+.navbar ul{
+    display: flex;
+    padding-right: 30rem;
+}
+
+
+
+.navbar ul li{
+margin: 1rem;
+font-size: 1.7rem;
+padding-top: 2.9rem;
+}
+
+.heading{
+text-align: center;
+}
+.review .reviews{
+padding-top: 14rem;
+} 
+
+.review .reviews{
+    position: absolute;
+width: 100%;
+height: 70vh;
+background-repeat: no-repeat;
+background-position:top center;
+background: url(foot.jpg);
+}
+
+
+
+.review .reviews .content{
+position: relative;;
+ text-align: center;
+justify-items: center;
+display: block;
+justify-content: center; 
+}
+
+
+.review .reviews .content h3{
+font-size: 3rem;
+font-weight: bold;
+color: #fff;
+text-align: center;
+padding-top: 4rem;
+}
+
+
+.review .reviews .content p{
+color: #fff;
+position: relative;
+top: 0.5rem;
+}
+
+
+.review .reviews .content .btn{
+width: 150px;
+background: tan;
+border-radius: 20rem;
+padding: 1rem 5rem;
+margin-top: 10rem;
+font-size: 1.5rem;
+font-weight: bold;
+position: relative;
+top: 3rem;
+color: black;
+z-index: 4;
+}
+
+
+.heading{
+    color: #fff;
+text-align: center;
+
+}
+
+
+.product  .box-contanier{
+padding-bottom: 4rem;
+padding-top: 48rem;
+}
+
+
+.product .box-contanier{
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+grid-gap: 1rem;
+text-align: center;
+align-items: center;
+
+}
+
+
+
+.product .box-contanier .box img{
+height: 400px;
+width: 90%;
+margin: 0px auto;
+}
+
+
+.product .box-contanier .box h3
+{
+position: relative;
+font-size: 1.6rem;
+left: -9.6rem;
+}
+
+
+
+.product .box-contanier .box p{
+position: relative;
+font-size: 1.6rem;
+z-index: 5;
+top: 0rem;
+left: -12.7rem;
+font-weight: bold;
+}
+
+
+   
+
+
+
+
+
+.products  .box-contanier{
+padding-bottom: 4rem;
+padding-top: 2rem;
+}
+
+
+.products .box-contanier{
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+grid-gap: 1rem;
+text-align: center;
+align-items: center;
+}
+
+
+
+
+.products .box-contanier .box img{
+width: 90%;
+height: 400px;
+}
+
+
+
+.products .box-contanier .box p{
+position: relative;
+left: -12rem;
+top: 0rem;
+font-size: 1.6rem;
+font-weight: bold;
+
+}
+
+.products .box-contanier .box h3{
+position: relative;
+font-size: 1.6rem;
+left: -9.2rem;
+}
+
+
+
+
+/* 
+#imgbx {
+	margin-bottom: -227px;
+} */
+
+
+ 
+.imgbx .home{
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+grid-gap: 1rem;
+
+
+}
+ 
+.imgbx .home .box{
+ margin-left: 5%;
+margin-right: 5%; 
+position: relative;
+text-align: center;
+align-items: center;
+}
+
+.imgbx .home .box img{
+width: 100%;
+height: 250px;
+}
+
+
+
+
+.imgbx .home .box h3{
+position: relative;
+top: -20rem;
+color: black;
+text-align: center;
+font-size: 3rem;
+}
+
+
+
+
+.imgbx .home .box p{
+position: relative;
+top: -20rem;
+font-size: 2rem;
+color: black;
+font-weight: bold;
+text-transform: uppercase;
+text-align: center;
+}
+
+ .imgbx .home .box .btn {
+	position: relative;
+	top: -17rem;
+	padding: 1rem 2rem;
+    background: teal;
+    color: #fff;
+}
+/*  
+.imgbx .home .box .btn:hover{
+color: orange;
+display: block;
+width: 9rem;;
+background: rebeccapurple;
+}
+ */
+
+
+footer{
+background: teal;
+height: 244px;
+display: block;
+position: relative;
+top: 17rem;
+bottom: 0rem;
+}
+
+
+.footer-contanier{
+flex-wrap: wrap;
+position: absolute;
+}
+
+.col-footer span{
+color: #fff;
+font-weight: bold;
+font-size: 1.5rem;
+position: relative;
+top: 6rem;
+}
+
+
+.col-footer{
+padding: 0rem 5rem;
+display: inline flow-root list-item;
+}
+
+.col-footer ul {
+	display: grid;
+	justify-content: flex-start;
+	font-size: 2rem;
+	position: relative;
+}
+
+
+
+.col-footer ul li {
+	display: grid;
+	position: relative;
+	top: 6rem;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+#imgbx {
+	margin-bottom: -15rem;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1000px){
+
+header{
+width: 100%;
+}
+
+header .logo{
+font-size: 1.9rem;
+position: relative;
+left: -6rem;
+color: currentColor;
+
+}
+
+.navbar ul{
+    display: none;
+}
+
+.product .box-contanier{
+position: relative;
+padding-top: 65rem;
+}
+ 
+.products .box-contanier {
+	position: relative;
+	padding-top: 0rem;
+} 
+
+
+ 
+.imgbx .home {
+	position: relative;
+	margin-bottom: 41rem;
+}
+footer {
+    overflow: hidden;
+	position: relative;
+	top: -29rem;
+	background: teal;
+	height: 260px;
+	bottom: 0rem;
+	display: flex;
+	max-width: 108rem;
+}
+
+
+.col-footer {
+	padding: 2rem 5rem; 
+	display: inline flow-root list-item;
+    max-width: 19rem;;
+}
+
+
+.footer-contanier {
+ 
+	position: absolute;
+	display: flex;
+	top: -3rem;
+}
+
+
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:400px){
+    .products .box-contanier .box h3 {
+	position: relative;
+	font-size: 1.6rem;
+	left: -9.2rem;
+	max-width: 31rem;
+}
+
+
+.product .box-contanier .box p {
+width: 32rem;
+}
+
+.product .box-contanier .box h3 {
+	width: 32rem;
+}
+
+.products .box-contanier .box p {
+	width: 31rem;
+}
+
+footer {
+	width: 100%;
+	height: 640px;
+}
+
+
+}
+
+@media only screen and (max-width:480px){
+
+.product .box-contanier .box p {
+	max-width: 34rem;
+    display: block;
+}
+
+.products .box-contanier .box p {
+	width: 32rem;
+	display: block;
+}
+
+.product .box-contanier .box h3 {
+	max-width: 33rem;
+	display: block;
+}
+.products .box-contanier .box h3 {
+	width: 32rem;
+}
+
+footer {
+	width: 100%;
+	height: 610px;
+	display: flex;
+}
+}
+
+@media only screen and (max-width:941px){
+    footer {
+	width: 100%;
+	height: 439px;
+}
+
+}
+
+
+@media only screen and (max-width:767px){
+    footer {
+	width: 100%;
+	height: 439px;
+}
+
+}
+
+
+@media only screen and (max-width:380px){
+
+    .product .box-contanier .box p {
+max-width: 31rem;
+}
+
+
+.product .box-contanier .box h3 {
+	max-width: 31rem;
+}
+.products .box-contanier .box h3 {
+	max-width: 31rem;
+}
+
+.products .box-contanier .box p {
+    max-width: 31rem;
+
+}
+
+
+footer {
+	width: 100%;
+	height: 630px;
+}
+
+}
+
+
+
+</style>
+</head>
+<body>
+<!-- header-start -->
+    <header>
+    <a href="" class="logo">.LoGo</a>
+    <nav class="navbar">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Service</li>
+            <li>Price</li>
+            <li>Feedback</li>
+        </ul>
+    </nav>
+</header>
+<!-- header-end -->
+
+<!--  review-start-->
+
+<section class="review" id="review">
+<div class="reviews">
+    <div class="rapper">
+
+        <div class="content">
+            <h3>Product Item</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur rerum reprehenderit eum odit quasi! Perspiciatis, molestiae vero. Repudiandae voluptatum ad, iste beatae pariatur possimus magni quis nisi unde minima blanditiis!</p>
+            <a href="" class="btn">Learn More</a>
+        </div>
+      </div>        
+    </div>
+</section>
+
+<!-- review-end -->
+
+<!-- product-start -->
+
+<section class="product" id="product">
+<h1 class="heading">PRODUCT FEATURED</h1>
+    <div class="box-contanier">
+        
+            <div class="box">
+                <img src="./women5 - Copy (2).jpg" alt="">
+                <h3>free service</h3>
+                <p>$200</p>
+            </div>
+
+            <div class="box">
+                <img src="./women6 - Copy.jpg" alt="">
+                <h3>free service</h3>
+                <p>$200</p>
+            </div>
+
+
+            <div class="box">
+                <img src="./women7.jpg" alt="">
+                <h3>free service</h3>
+                <p>$200</p>
+            </div>
+
+
+            <div class="box">
+                <img src="./women8 - Copy.jpg" alt="">
+                <h3>free service</h3>
+                <p>$200</p>
+            </div>
+        </div>
+</section> 
+
+
+<!-- product-end -->
+
+<!-- product-start -->
+
+<section class="products" id="products">
+        <h1 class="heading">PRODUCT FEATURED</h1>
+            <div class="box-contanier">
+                
+                    <div class="box">
+                        <img src="./women1 - Copy - Copy.jpg" alt="">
+                        <h3>free service</h3>
+                        <p>$200</p>
+                    </div>
+        
+                    <div class="box">
+                        <img src="./women2 - Copy.jpg" alt="">
+                        <h3>free service</h3>
+                        <p>$200</p>
+                    </div>
+        
+        
+                    <div class="box">
+                        <img src="./women3 - Copy.jpg" alt="">
+                        <h3>free service</h3>
+                        <p>$200</p>
+                    </div>
+        
+        
+                    <div class="box">
+                        <img src="./women4 - Copy.jpg" alt="">
+                        <h3>free service</h3>
+                        <p>$200</p>
+                    </div>
+                </div>        
+        </section> 
+
+<!-- product-end -->
+
+
+<!-- imgbx-start -->
+
+<section class="imgbx" id="imgbx">
+    <div class="home">
+       
+            <div class="box">
+                <img src="./slider - Copy.jpg" alt="">
+                <h3>free service</h3>
+                <p>Free Service</p>
+                <a href="" class="btn">Learn More</a>
+            </div>
+
+            <div class="box">
+                <img src="./slider1.jpg" alt="">
+                <h3>free service</h3>
+                <p>Free Service</p>
+                <a href="" class="btn">Learn More</a>
+            </div>
+       </div>
+</section>
+
+<!-- start-end -->
+
+
+<!-- footer-start -->
+
+<footer>
+    <div class="footer-contanier">
+        <div class="col-footer">
+            <span>Footer</span>
+            <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Service</li>
+            <li>Price</li>
+            <li>Feedback</li>
+            </ul>
+        </div>
+
+        <div class="col-footer">
+            <span>Footer</span>
+            <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Service</li>
+            <li>Price</li>
+            <li>Feedback</li>
+            </ul>
+        </div>
+        
+
+        <div class="col-footer">
+            <span>Footer</span>
+            <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Service</li>
+            <li>Price</li>
+            <li>Feedback</li>
+            </ul>
+        </div>
+        
+        
+
+        <div class="col-footer">
+            <span>Footer</span>
+            <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Service</li>
+            <li>Price</li>
+            <li>Feedback</li>
+            </ul>
+        </div>
+        
+        
+
+        <div class="col-footer">
+            <span>Footer</span>
+            <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Service</li>
+            <li>Price</li>
+            <li>Feedback</li>
+            </ul>
+        </div>
+
+        
+
+        <div class="col-footer">
+            <span>Footer</span>
+            <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Service</li>
+            <li>Price</li>
+            <li>Feedback</li>
+            </ul>
+        </div>
+                
+                
+    </div>
+</footer>
+
+
+<!-- footer-end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star-half-stroke"></i> -->
+</body>
+</html>
